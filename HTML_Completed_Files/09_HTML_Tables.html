@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        table , th , td {
+            border: 2px solid red;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+            table{
+                box-shadow: 0 0 15px blue;
+                width: 100%;
+            }
+        th{
+    text-transform: uppercase;
+        }
+         #red thead{
+             background-color: orangered;
+
+            }
+        #red tbody{
+            background-color: orange;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h2> Simple Table </h2>
+<table>
+    <thead>
+    <tr>
+        <th>S No.</th>
+        <th>Name</th>
+        <th>designation</th>
+        <th>Company</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Hari</td>
+        <td>Manager</td>
+        <td>Google</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Mohan</td>
+        <td>Team Leader</td>
+        <td> Wipro</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Rushi</td>
+        <td>Senior Manager</td>
+        <td>Facebook</td>
+    </tr>
+    </tbody>
+</table>
+
+    <!-- Table with Col Span -->
+    <h2> Table with Col Span </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>S No.</th>
+            <th>Name</th>
+            <th colspan="2">designation & Company</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Hari</td>
+            <td>Manager</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mohan</td>
+            <td>Team Leader</td>
+            <td> Wipro</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Rushi</td>
+            <td>Senior Manager</td>
+            <td>Facebook</td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Table With Row Span -->
+    <h2> Table With Row Span </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>S No.</th>
+            <th>Name</th>
+            <th colspan="2">designation & Company</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>Hari</td>
+            <td>Manager</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+
+            <td>Mohan</td>
+            <td rowspan="2">Team Leader</td>
+            <td> Wipro</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Rushi</td>
+
+            <td>Facebook</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Custom Table with CSS -->
+    <h2> Custom Table with CSS </h2>
+    <table id="red">
+        <thead>
+        <tr>
+            <th>S No.</th>
+            <th>Name</th>
+            <th>designation</th>
+            <th>Company</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Hari</td>
+            <td>Manager</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mohan</td>
+            <td>Team Leader</td>
+            <td> Wipro</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Rushi</td>
+            <td>Senior Manager</td>
+            <td>Facebook</td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Table task-->
+    <h2> Table task</h2>
+<table>
+    <tr>
+        <td rowspan="2">
+            <img src="img/youtube.jpg" width="200" height="100">
+        </td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td rowspan="2">
+            <img src="img/facebook.jpg" width="200" height="100">
+        </td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+</table>
+</body>
+</html>
